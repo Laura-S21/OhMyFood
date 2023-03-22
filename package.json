@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Oh My Food\r Améliorez l'interface d'un site mobile avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
