@@ -2,4 +2,9 @@ body {
   max-width: 767px;
 }
 
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */
