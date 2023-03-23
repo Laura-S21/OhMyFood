@@ -1,4 +1,9 @@
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+@import "../Utils/mixins.scss";
+
+.location {
+    @include font-base;
+}
+
+.block-title {
+    @include font-title;
 }
