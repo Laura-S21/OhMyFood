@@ -1,0 +1,12 @@
+.header-home {
+    width: 100%;
+    margin: auto;
+     @include header-base;
+}
+
+.location-point {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+     
+}
