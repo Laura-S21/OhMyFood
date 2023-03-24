@@ -1,4 +1,7 @@
+@import "../Utils/variables.scss";
+
 body {
+
     margin: 0;
 }
 
@@ -15,8 +18,39 @@ body {
 .location-point {
     @include for-phone;
     @include header-shadow;
+    @include font-base;
     display: flex;
     justify-content: center;
     background-color: #EAEAEA;
      
+     &__dot {
+        padding-right: 15px;
+     }
+}
+
+.explore-section {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+        &__title {
+            margin: 0;
+            @include font-section-title;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        &__text {
+            font-family: $font-family-base;
+            font-weight: 300;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        &__button {
+            @include purple-button;
+            margin-top: 10px;
+        }
 }
