@@ -71,4 +71,63 @@ body {
   margin-top: 10px;
 }
 
+.functioning-section {
+  padding-top: 40px;
+}
+.functioning-section__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 3%;
+}
+.functioning-section__all-buttons {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.functioning-section__button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  background-color: #f6f6f6;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 75%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.functioning-section__button:hover {
+  background-color: #f4eefc;
+}
+.functioning-section__button-number {
+  position: absolute;
+  right: 96%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 30px 30px 30px 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.functioning-section__icon {
+  color: #7E7E7E;
+  position: absolute;
+  right: 85%;
+  bottom: 36%;
+}
+
 /*# sourceMappingURL=style.css.map */
