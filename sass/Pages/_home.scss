@@ -54,3 +54,55 @@ body {
             margin-top: 10px;
         }
 }
+
+.functioning-section {
+    padding-top: 40px;
+
+        &__title {
+            margin: 0;
+            @include font-section-title;
+            padding-left: 3%;
+        }
+
+        &__all-buttons {
+            padding-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        &__button {
+            @include functioning-button;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__button:hover {
+            background-color: lighten($color-primary, 36);
+        }
+
+        &__button-number {
+            position: absolute;
+            right: 96%;
+            font-family: $font-family-base;
+            font-weight: $font-weight-base;
+            font-size: 14px;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 30px 30px 30px 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        &__icon {
+            color: #7E7E7E;
+            position: absolute;
+            right: 85%;
+            bottom: 36%;
+        }
+}
