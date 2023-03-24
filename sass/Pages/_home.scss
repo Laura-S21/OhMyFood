@@ -1,10 +1,20 @@
+body {
+    margin: 0;
+}
+
 .header-home {
-    width: 100%;
-    margin: auto;
-     @include header-base;
+    @include for-phone;
+    @include header-base;
+
+        &__logo {
+            width: 40%;
+        }
+
 }
 
 .location-point {
+    @include for-phone;
+    @include header-shadow;
     display: flex;
     justify-content: center;
     background-color: #EAEAEA;
