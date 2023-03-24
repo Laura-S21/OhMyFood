@@ -50,3 +50,16 @@
     padding: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
+
+@mixin functioning-button {
+    @include font-base;
+    text-decoration: none;
+    color: black;
+    background-color: $background-color;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 75%;
+    text-align: center;
+}
