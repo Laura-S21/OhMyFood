@@ -18,6 +18,12 @@
     font-size: $font-size-base;
 }
 
+@mixin font-section-title {
+    font-family: $font-family-section-title;
+    font-weight: $font-weight-section-title;
+    font-size: $font-size-section-title;
+}
+
 @mixin font-title {
     font-family: $font-family-title;
     font-weight: $font-weight-title;
@@ -33,4 +39,14 @@
 
 @mixin header-shadow {
     background: linear-gradient(180deg, rgb(207, 207, 207) 0%, #e3e1e1 10%);
+}
+
+@mixin purple-button {
+    @include font-base;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(180deg, $color-secondary, $color-primary);
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
