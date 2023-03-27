@@ -41,6 +41,16 @@
     height: 17px;
 }
 
+@mixin font-new-text {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: 14px;
+    background-color: $color-tertiary;
+    color: darken($color: $color-tertiary, $amount: 40);
+    padding: 7px;
+    border-radius: 2px 2px 2px 2px;
+}
+
 @mixin header-base {
     display: flex;
     justify-content: center;
