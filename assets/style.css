@@ -2,11 +2,14 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .block-title {
+  margin: 0;
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .restaurants-section__card-title {
@@ -29,17 +32,53 @@
   color: #278870;
   padding: 7px;
   border-radius: 2px 2px 2px 2px;
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer {
+  margin: 0;
+  background-color: #353535;
+  color: white;
+  padding-bottom: 20px;
+}
+.footer__title {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer__list {
+  list-style: none;
+  padding-left: 30px;
+  margin: 0;
+  line-height: 25px;
+}
+.footer__icon {
+  padding-right: 10px;
+  font-size: 13px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
 }
 
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .block-title {
+  margin: 0;
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .restaurants-section__card-title {
@@ -62,6 +101,13 @@
   color: #278870;
   padding: 7px;
   border-radius: 2px 2px 2px 2px;
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 body {
@@ -84,6 +130,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
@@ -118,6 +165,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+  text-decoration: none;
   color: white;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 30px 30px 30px 30px;
@@ -148,6 +196,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
   text-decoration: none;
   color: black;
   background-color: #f6f6f6;
