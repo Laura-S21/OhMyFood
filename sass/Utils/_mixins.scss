@@ -29,6 +29,18 @@
     font-weight: $font-weight-title;
 }
 
+@mixin font-card-title {
+    font-family: $font-family-base;
+    font-weight: 700px;
+    height: 18px;
+}
+
+@mixin font-card-text {
+    font-family: $font-family-base;
+    font-weight: 300;
+    height: 17px;
+}
+
 @mixin header-base {
     display: flex;
     justify-content: center;
