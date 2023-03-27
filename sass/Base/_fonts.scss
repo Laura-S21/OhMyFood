@@ -15,3 +15,7 @@
 .restaurants-section__card-text {
     @include font-card-text;
 }
+
+.restaurants-section__new {
+    @include font-new-text;
+}
