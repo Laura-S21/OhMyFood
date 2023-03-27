@@ -19,3 +19,7 @@
 .restaurants-section__new {
     @include font-new-text;
 }
+
+.footer {
+    @include font-base;
+}
