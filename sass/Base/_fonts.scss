@@ -7,3 +7,11 @@
 .block-title {
     @include font-title;
 }
+
+.restaurants-section__card-title {
+    @include font-card-title;
+}
+
+.restaurants-section__card-text {
+    @include font-card-text;
+}
