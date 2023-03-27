@@ -1,0 +1,32 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+.footer {
+    margin: 0;
+    background-color: $footer-background;
+    color: white;
+    padding-bottom: 20px;
+
+    &__title {
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 30px;
+        margin: 0;
+        line-height: 25px;
+    }
+
+    &__icon {
+        padding-right: 10px;
+        font-size: 13px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
