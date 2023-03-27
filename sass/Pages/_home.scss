@@ -1,4 +1,5 @@
 @import "../Utils/variables.scss";
+@import "../Layout/footer";
 @import "../Base/fonts.scss";
 
 body {
@@ -108,7 +109,8 @@ body {
             position: absolute;
             right: 85%;
             bottom: 36%;
-        }  
+        }
+
 }
 
 .restaurants-section {
