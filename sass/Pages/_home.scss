@@ -1,4 +1,5 @@
 @import "../Utils/variables.scss";
+@import "../Base/fonts.scss";
 
 body {
 
@@ -57,6 +58,7 @@ body {
 
 .functioning-section {
     padding-top: 40px;
+    padding-bottom: 60px;
 
         &__title {
             margin: 0;
@@ -104,5 +106,46 @@ body {
             position: absolute;
             right: 85%;
             bottom: 36%;
-        }
+        }  
+}
+
+.restaurants-section {
+    padding-top: 40px;
+    background-color: $background-color;
+
+    &__title {
+        margin: 0;
+        @include font-section-title;
+        padding-left: 3%;
+    }
+
+    &__all-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__card {
+        width: 80%;
+        height: 220px;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__card-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    &__card-title {
+        margin: 0;
+    }
+
+    &__card-text {
+        margin: 0;
+    }
 }
