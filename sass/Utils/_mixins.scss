@@ -16,6 +16,7 @@
     font-family: $font-family-base;
     font-weight: $font-weight-base;
     font-size: $font-size-base;
+    text-decoration: none;
 }
 
 @mixin font-section-title {
@@ -25,8 +26,10 @@
 }
 
 @mixin font-title {
+    margin: 0;
     font-family: $font-family-title;
     font-weight: $font-weight-title;
+    font-size: $font-size-title;
 }
 
 @mixin font-card-title {
