@@ -83,10 +83,22 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
 
-        &__button:hover {
-            background-color: lighten($color-primary, 36);
+            &:hover {
+                background-color: lighten($color-primary, 36);
+                
+                .functioning-section__icon {
+                    color: $color-primary;
+                }
+                
+            }
+
+            .functioning-section__icon {
+                color: #7E7E7E;
+                position: absolute;
+                right: 85%;
+                bottom: 36%;
+            }
         }
 
 
@@ -105,12 +117,7 @@ body {
             padding-bottom: 4px;
         }
 
-        &__icon {
-            color: #7E7E7E;
-            position: absolute;
-            right: 85%;
-            bottom: 36%;
-        }
+        
 
 }
 
