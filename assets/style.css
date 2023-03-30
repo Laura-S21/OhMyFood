@@ -1,3 +1,29 @@
+.footer {
+  margin: 0;
+  background-color: #353535;
+  color: white;
+  padding-bottom: 20px;
+}
+.footer__title {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer__list {
+  list-style: none;
+  padding-left: 30px;
+  margin: 0;
+  line-height: 25px;
+}
+.footer__icon {
+  padding-right: 10px;
+  font-size: 13px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -214,6 +240,15 @@ body {
 .functioning-section__button:hover {
   background-color: #f4eefc;
 }
+.functioning-section__button:hover .functioning-section__icon {
+  color: #9356DC;
+}
+.functioning-section__button .functioning-section__icon {
+  color: #7E7E7E;
+  position: absolute;
+  right: 85%;
+  bottom: 36%;
+}
 .functioning-section__button-number {
   position: absolute;
   right: 96%;
@@ -227,12 +262,6 @@ body {
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-}
-.functioning-section__icon {
-  color: #7E7E7E;
-  position: absolute;
-  right: 85%;
-  bottom: 36%;
 }
 
 .restaurants-section {
