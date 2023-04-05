@@ -1,0 +1,11 @@
+@import "../Utils/variables.scss";
+
+@keyframes heart-linear{
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
