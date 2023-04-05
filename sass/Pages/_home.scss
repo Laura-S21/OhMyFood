@@ -1,4 +1,5 @@
 @import "../Utils/variables.scss";
+@import "../Utils/keyframes.scss";
 @import "../Layout/footer";
 @import "../Base/fonts.scss";
 
@@ -85,8 +86,6 @@ body {
             justify-content: center;
 
             &:hover {
-                background-color: lighten($color-primary, 36);
-                
                 .functioning-section__icon {
                     color: $color-primary;
                 }
@@ -180,8 +179,23 @@ body {
 
     &__heart {
         position: absolute;
-        right: 8%;
-        bottom: 11%;
-        font-size: 22px;
+            right: 8%;
+            bottom: 11%;
+            font-size: 22px;
     }
+
+    &__heart--linear {
+       display: none;
+    }
+   
+}
+
+.restaurants-section__heart--linear:active {
+    display: block;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, $color-primary, $color-secondary);
+    transform: scaleY(1) ;
+    transform-origin: 0%;
+    animation: 0.5s forwards heart-linear;
 }
