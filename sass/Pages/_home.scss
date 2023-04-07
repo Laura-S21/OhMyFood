@@ -180,28 +180,33 @@ body {
 
 }
 
+/* Hearts animation */
+
+.restaurants-section__hearts {
+    
+    .solid-heart {
+        position: absolute;
+        right: 8%;
+        bottom: 11%;
+        font-size: 22px;
+        background: linear-gradient(180deg, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transition: all 600ms;
+    }
+
+    &:hover {
+        .solid-heart {
+        transform: scale(1);
+        }
+    }
+}
+
 .wire-heart {
     position: absolute;
     right: 8%;
     bottom: 11%;
     font-size: 22px;
-    z-index: 0;
-}
-
-.solid-heart {
-    position: absolute;
-    right: 8%;
-    bottom: 11%;
-    font-size: 22px;
-    background: linear-gradient(180deg, $color-primary, $color-secondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: clip-path 600ms;
-    clip-path: circle(0%);
-    z-index: 1;
-
-    &:hover {
-        clip-path: circle(100%);
-    }
 }
