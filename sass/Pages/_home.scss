@@ -185,6 +185,7 @@ body {
     right: 8%;
     bottom: 11%;
     font-size: 22px;
+    z-index: 0;
 }
 
 .solid-heart {
@@ -198,6 +199,7 @@ body {
     color: transparent;
     transition: clip-path 600ms;
     clip-path: circle(0%);
+    z-index: 1;
 
     &:hover {
         clip-path: circle(100%);
