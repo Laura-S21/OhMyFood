@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+/*
 @mixin for-phone {
     @media all and (min-width: 320px) and (max-width:640px){@content;}
 }
@@ -11,7 +12,27 @@
 @mixin for-desktop {
     @media all and (min-width: 1008px) and (max-width:1400px){@content;}
 }
+*/
 
+@mixin min-width($breakpoint) {
+     @if ($breakpoint == small) {
+      @media (min-width: $breakpoint-small) {
+        @content;
+      }
+    } @else if ($breakpoint == medium) {
+      @media (min-width: $breakpoint-medium) {
+        @content;
+      }
+    } @else if ($breakpoint == large) {
+      @media (min-width: $breakpoint-large) {
+        @content;
+      }
+    } 
+    @else {
+      @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+    }
+  }
+  
 @mixin font-base {
     font-family: $font-family-base;
     font-weight: $font-weight-base;
@@ -95,4 +116,17 @@
     padding-bottom: 20px;
     width: 75%;
     text-align: center;
+}
+
+@mixin functioning-button-large {
+  @include font-base;
+  text-decoration: none;
+  color: black;
+  background-color: $background-color;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 25%;
+  text-align: center;
 }

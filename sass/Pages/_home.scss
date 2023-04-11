@@ -11,7 +11,7 @@ body {
 }
 
 .header-home {
-    @include for-phone;
+    
     @include header-base;
 
         &__logo {
@@ -21,7 +21,7 @@ body {
 }
 
 .location-point {
-    @include for-phone;
+    
     @include header-shadow;
     @include font-base;
     display: flex;
@@ -34,7 +34,6 @@ body {
 }
 
 .explore-section {
-    @include for-phone;
     background-color: $background-color;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,7 @@ body {
 }
 
 .functioning-section {
-    @include for-phone;
+    
     padding-top: 40px;
     padding-bottom: 60px;
 
@@ -70,23 +69,31 @@ body {
             margin: 0;
             @include font-section-title;
             padding-left: 3%;
+
+            @include min-width(large) {
+                padding-left: 9%;
+            }
         }
 
         &__all-buttons {
+            @include min-width(small) {
             padding-top: 25px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 25px;
+            }
 
-            @include for-desktop {
+            @include min-width(large) {
                 flex-wrap: nowrap;
-                gap: 0px;
+                gap: 42px;
             }
             
         }
 
         &__button {
+
+            @include min-width(small){
             @include functioning-button;
             position: relative;
             display: flex;
@@ -106,8 +113,11 @@ body {
                 right: 85%;
                 bottom: 36%;
             }
+        }
 
-            
+            @include min-width(large) {
+                @include functioning-button-large;
+                    }
         }
 
 
@@ -131,7 +141,7 @@ body {
 }
 
 .restaurants-section {
-    @include for-phone;
+    
     padding-top: 40px;
     padding-bottom: 50px;
     background-color: $background-color;
@@ -140,6 +150,10 @@ body {
         margin: 0;
         @include font-section-title;
         padding-left: 3%;
+
+        @include min-width(large) {
+            padding-left: 9%;
+        }
     }
 
     &__all-cards {
@@ -149,6 +163,13 @@ body {
         justify-content: space-between;
         gap: 25px;
         padding-top: 25px;
+
+        @include min-width(large) {
+            flex-direction: row;
+            gap: 53px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__card {
@@ -159,6 +180,10 @@ body {
         border-radius: 15px 15px 15px 15px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
         position: relative;
+
+        @include min-width(large) {
+            width: 40%;
+        }
     }
 
     &__new {
