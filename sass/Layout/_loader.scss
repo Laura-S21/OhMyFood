@@ -2,13 +2,15 @@
 @import "../Utils/keyframes";
 
 .loader {
-  position: absolute;
+  position: fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 189%;
-  width: 100%;
   background: white;
   z-index: 1;
   animation: loader-page 3s forwards;
@@ -16,6 +18,15 @@
 
 .loader__logo {
   width: 80%;
+
+  @include min-width(medium) {
+    width: 40%;
+}
+
+@include min-width(large) {
+    width: 40%;
+}
+
 }
 
 .lds-ellipsis {

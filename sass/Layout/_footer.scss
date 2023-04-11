@@ -10,8 +10,9 @@
     @include min-width(large) {
         display: flex;
         flex-direction: row-reverse;
-        padding-top: 40px;
+        padding-top: 78px;
         padding-right: 5%;
+        padding-bottom: 30px;
     }
 
     &__title {

@@ -16,6 +16,14 @@ body {
 
         &__logo {
             width: 40%;
+
+            @include min-width(medium) {
+                width: 10%;
+            }
+
+            @include min-width(large) {
+                width: 10%;
+            }
         }
 
 }

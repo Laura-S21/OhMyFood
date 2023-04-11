@@ -21,8 +21,9 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 40px;
+    padding-top: 78px;
     padding-right: 5%;
+    padding-bottom: 30px;
   }
 }
 .footer__title {
@@ -207,8 +208,9 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 40px;
+    padding-top: 78px;
     padding-right: 5%;
+    padding-bottom: 30px;
   }
 }
 .footer__title {
@@ -302,13 +304,15 @@
   }
 }
 .loader {
-  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 189%;
-  width: 100%;
   background: white;
   z-index: 1;
   animation: loader-page 3s forwards;
@@ -316,6 +320,16 @@
 
 .loader__logo {
   width: 80%;
+}
+@media (min-width: 768px) {
+  .loader__logo {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .loader__logo {
+    width: 40%;
+  }
 }
 
 .lds-ellipsis {
@@ -427,6 +441,16 @@ body {
 }
 .header-home__logo {
   width: 40%;
+}
+@media (min-width: 768px) {
+  .header-home__logo {
+    width: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .header-home__logo {
+    width: 10%;
+  }
 }
 
 .location-point {
