@@ -396,6 +396,12 @@ body {
   justify-content: center;
   gap: 25px;
 }
+@media all and (min-width: 1008px) and (max-width: 1400px) {
+  .functioning-section__all-buttons {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+}
 .functioning-section__button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
