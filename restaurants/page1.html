@@ -15,20 +15,21 @@
     </head>
     <body>
         <header class="header-menu">
-            <div class="header-menu__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+            <a href="../index.html" class="header-menu__arrow"><i class="fa-solid fa-arrow-left"></i></a>
             <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo Oh My Food" class="header-menu__logo">
         </header>
-        <main>
+        <main class="menu-main">
             <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat gastronomique" class="menu-img">
-                <div class="menu-head">
+                <section class="menu-head">
                     <h1 class="menu-head__title">La palette du goût</h1>
                     <div class="menu-head__hearts">
                         <div><i class="fa-regular fa-heart wire-heart"></i></div>
                         <div><i class="fa-solid fa-heart solid-heart" ></i></div>
                     </div>
-                </div>
+                </section>
                 <section class="course">
                     <h2 class="course__title">ENTRÉES</h2>
+                    <div class="course__line"></div>
                     <div class="course__all-buttons">
                         <article class="course__button">
                             <h3 class="course__dish">Fricassée d'escargots</h3>
@@ -49,6 +50,7 @@
                 </section>
                 <section class="course">
                     <h2 class="course__title">PLATS</h2>
+                    <div class="course__line"></div>
                     <div class="course__all-buttons">
                         <article class="course__button">
                             <h3 class="course__dish">Filet de bœuf aux herbes</h3>
@@ -69,6 +71,7 @@
                 </section>
                 <section class="course">
                     <h2 class="course__title">DESSERTS</h2>
+                    <div class="course__line"></div>
                     <div class="course__all-buttons">
                         <article class="course__button">
                             <h3 class="course__dish">Paris-Brest</h3>
@@ -87,7 +90,9 @@
                         </article>
                     </div>
                 </section>
-                <a href="#" class="order__button">Commander</a>
+                <section class="order">
+                    <a href="#" class="order__button">Commander</a>
+                </section>
         </main>
         <footer class="footer">
             <h4 class="block-title footer__title">ohmyfood</h4>

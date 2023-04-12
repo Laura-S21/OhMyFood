@@ -5,3 +5,143 @@
 @import "../Layout/loader";
 @import "../Base/fonts.scss";
 
+body {
+    @include min-width(small);
+    margin: 0;
+}
+
+.header-menu {
+    @include header-base;
+    position: relative;
+
+        &__logo {
+            width: 40%;
+            
+
+            @include min-width(medium) {
+                width: 10%;
+            }
+
+            @include min-width(large) {
+                width: 10%;
+            }
+        }
+
+        &__arrow {
+            color: black;
+            font-size: 18px;
+            position: absolute;
+            left: 5%;
+        }
+}
+
+.menu-main {
+    background-color: $background-color;
+}
+
+.menu-img {
+    width: 100%;
+}
+
+.menu-head {
+    border-radius: 40px 40px 0px 0px;
+    background-color: $background-color;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -40px;
+    padding-top: 20px;
+
+    &__title {
+        @include font-menu-title;
+        padding-left: 5%;
+    }
+
+    /* Hearts animation */
+
+.menu-head__hearts {
+    
+    .solid-heart {
+        position: absolute;
+        right: 12%;
+        bottom: 14%;
+        font-size: 22px;
+        background: linear-gradient(180deg, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transition: all 400ms;
+    }
+
+    &:hover {
+        .solid-heart {
+        transform: scale(1);
+        }
+    }
+}
+
+.wire-heart {
+    position: absolute;
+    right: 12%;
+    bottom: 15%;
+    font-size: 22px;
+}
+}
+
+.course {
+
+    &__title {
+        @include font-course-title;
+    }
+
+    &__line {
+        width: 10%;
+        margin-left: 3%;
+        margin-top: 5px;
+        height: 3px;
+        background-color: $color-tertiary;
+    }
+
+    &__all-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        @include menu-button;
+        position: relative;
+        
+    }
+
+    &__dish {
+        @include font-course-dish;
+        padding-top: 3%;
+    }
+
+    &__text {
+        @include font-course-text;
+        padding-bottom: 3%;
+    }
+
+    &__price {
+        @include font-course-price;
+    }
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    &__button {
+        @include purple-button;
+        text-align: center;
+        width: 40%;
+    }
+    
+}

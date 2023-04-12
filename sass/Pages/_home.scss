@@ -122,7 +122,6 @@ body {
                 bottom: 36%;
             }
         }
-
             @include min-width(large) {
                 @include functioning-button-large;
                     }

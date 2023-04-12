@@ -1,19 +1,5 @@
 @import "./variables.scss";
 
-/*
-@mixin for-phone {
-    @media all and (min-width: 320px) and (max-width:640px){@content;}
-}
-
-@mixin for-tablet {
-    @media all and (min-width: 641px) and (max-width:1007px){@content;}
-}
-
-@mixin for-desktop {
-    @media all and (min-width: 1008px) and (max-width:1400px){@content;}
-}
-*/
-
 @mixin min-width($breakpoint) {
      @if ($breakpoint == small) {
       @media (min-width: $breakpoint-small) {
@@ -53,9 +39,26 @@
     font-size: $font-size-title;
 }
 
+@mixin font-new-text {
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-size: 14px;
+  background-color: $color-tertiary;
+  color: darken($color: $color-tertiary, $amount: 40);
+  padding: 7px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+@mixin font-menu-title {
+  margin: 0;
+  font-family: $font-family-menu-title;
+  font-weight: $font-weight-menu-title;
+  font-size: $font-size-menu-title;
+}
+
 @mixin font-card-title {
     font-family: $font-family-base;
-    font-weight: 700px;
+    font-weight: $font-weight-section-title;
     height: 18px;
 }
 
@@ -65,14 +68,40 @@
     height: 17px;
 }
 
-@mixin font-new-text {
-    font-family: $font-family-base;
-    font-weight: $font-weight-base;
-    font-size: 14px;
-    background-color: $color-tertiary;
-    color: darken($color: $color-tertiary, $amount: 40);
-    padding: 7px;
-    border-radius: 2px 2px 2px 2px;
+@mixin font-course-title {
+  margin: 0;
+  font-family: $font-family-course;
+  font-weight: $font-weight-course;
+  font-size: $font-size-course;
+  padding-left: 3%;
+}
+
+@mixin font-course-text {
+  margin: 0;
+  font-family: $font-family-course;
+  font-weight: $font-weight-course;
+  font-size: 14px;
+  padding-left: 3%;
+}
+
+@mixin font-course-dish {
+  margin: 0;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-size: 18px;
+  padding-left: 3%;
+}
+
+
+
+@mixin font-course-price {
+  margin: 0;
+  font-family: $font-family-base;
+  font-weight: $font-weight-section-title;
+  font-size: 15px;
+  position: absolute;
+  top: 52%;
+  right: 4%;
 }
 
 @mixin header-base {
@@ -114,7 +143,7 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 75%;
+    width: 82%;
     text-align: center;
 }
 
@@ -129,4 +158,13 @@
   padding-bottom: 20px;
   width: 25%;
   text-align: center;
+}
+
+@mixin menu-button {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  width: 92%;
 }
