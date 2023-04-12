@@ -1,3 +1,7 @@
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .footer {
   margin: 0;
   background-color: #353535;
@@ -45,6 +49,10 @@
   }
 }
 
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -88,6 +96,10 @@
   text-decoration: none;
 }
 
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 @keyframes heart-in {
   from {
     clip-path: circle(0%);
@@ -146,6 +158,10 @@
     z-index: -1;
   }
 }
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .footer {
   margin: 0;
   background-color: #353535;
@@ -320,6 +336,10 @@
   animation: lds-ellipsis3 0.6s infinite;
 }
 
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -629,6 +649,10 @@ body {
   font-size: 22px;
 }
 
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 @keyframes heart-in {
   from {
     clip-path: circle(0%);
@@ -687,6 +711,10 @@ body {
     z-index: -1;
   }
 }
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .footer {
   margin: 0;
   background-color: #353535;
@@ -861,6 +889,10 @@ body {
   animation: lds-ellipsis3 0.6s infinite;
 }
 
+/*Breakpoints*/
+/*Fonts*/
+/*Header*/
+/*Buttons*/
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -935,12 +967,30 @@ body {
   left: 5%;
 }
 
-.menu-main {
+.main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
   background-color: #f6f6f6;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .menu {
+    width: 78%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    width: 78%;
+  }
 }
 
 .menu-img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .menu-head {
@@ -962,7 +1012,7 @@ body {
 }
 .menu-head .menu-head__hearts .solid-heart {
   position: absolute;
-  right: 12%;
+  right: 10%;
   bottom: 14%;
   font-size: 22px;
   background: linear-gradient(180deg, #9356DC, #FF79DA);
@@ -977,7 +1027,7 @@ body {
 }
 .menu-head .wire-heart {
   position: absolute;
-  right: 12%;
+  right: 10%;
   bottom: 15%;
   font-size: 22px;
 }
@@ -1028,6 +1078,13 @@ body {
   font-size: 14px;
   padding-left: 3%;
   padding-bottom: 3%;
+}
+@media (min-width: 320px) {
+  .course__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .course__price {
   margin: 0;

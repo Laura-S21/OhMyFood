@@ -35,12 +35,29 @@ body {
         }
 }
 
-.menu-main {
+.main-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
     background-color: $background-color;
+    width: 100%;
+
+    @include min-width(medium) {
+        width: 78%;
+        
+    }
+
+    @include min-width(large) {
+        width: 78%;
+    }
 }
 
 .menu-img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .menu-head {
@@ -63,7 +80,7 @@ body {
     
     .solid-heart {
         position: absolute;
-        right: 12%;
+        right: 10%;
         bottom: 14%;
         font-size: 22px;
         background: linear-gradient(180deg, $color-primary, $color-secondary);
@@ -83,7 +100,7 @@ body {
 
 .wire-heart {
     position: absolute;
-    right: 12%;
+    right: 10%;
     bottom: 15%;
     font-size: 22px;
 }
@@ -115,7 +132,6 @@ body {
     &__button {
         @include menu-button;
         position: relative;
-        
     }
 
     &__dish {
@@ -126,6 +142,12 @@ body {
     &__text {
         @include font-course-text;
         padding-bottom: 3%;
+
+        @include min-width(small) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &__price {

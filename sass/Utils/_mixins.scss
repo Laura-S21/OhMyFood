@@ -1,5 +1,7 @@
 @import "./variables.scss";
 
+/*Breakpoints*/
+
 @mixin min-width($breakpoint) {
      @if ($breakpoint == small) {
       @media (min-width: $breakpoint-small) {
@@ -18,6 +20,8 @@
       @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
     }
   }
+
+  /*Fonts*/
   
 @mixin font-base {
     font-family: $font-family-base;
@@ -92,8 +96,6 @@
   padding-left: 3%;
 }
 
-
-
 @mixin font-course-price {
   margin: 0;
   font-family: $font-family-base;
@@ -103,6 +105,8 @@
   top: 52%;
   right: 4%;
 }
+
+/*Header*/
 
 @mixin header-base {
     display: flex;
@@ -115,6 +119,8 @@
 @mixin header-shadow {
     background: linear-gradient(180deg, rgb(207, 207, 207) 0%, #e3e1e1 10%);
 }
+
+/*Buttons*/
 
 @mixin purple-button {
     @include font-base;
