@@ -182,3 +182,52 @@ body {
     }
 }
 }
+
+/*Dishes selector animation*/
+
+.animation {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+    background-color: $color-tertiary;
+
+    &__check {
+        color: white;
+        overflow: hidden;
+    }
+}
+
+.course__button {
+    cursor: pointer;
+    &:hover .animation {
+        width: 18%;
+        margin-left:-18%;
+        transition-duration: 500ms;
+     }
+
+     &:not(:hover) .animation {
+        width: 0%;
+        transition-duration: 300ms;
+     }
+}
+
+.course__button:hover {
+
+    .course__price{
+    right: 20%;
+    transition-duration: 500ms;
+    }
+}
+
+.course__button:not(:hover) {
+
+    .course__price {
+        right: 4%;
+        transition-duration: 500ms;
+    }
+}
