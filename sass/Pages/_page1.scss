@@ -167,3 +167,18 @@ body {
     }
     
 }
+
+/*Menu animation*/
+
+.all-courses {
+
+    .course {
+    animation: courses-anim $anim-dur backwards;
+
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+}

@@ -65,3 +65,13 @@
         z-index: -1;
     }
   }
+
+  @keyframes courses-anim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }

@@ -158,6 +158,14 @@
     z-index: -1;
   }
 }
+@keyframes courses-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Breakpoints*/
 /*Fonts*/
 /*Header*/
@@ -265,6 +273,14 @@
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+@keyframes courses-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .loader {
@@ -711,6 +727,14 @@ body {
     z-index: -1;
   }
 }
+@keyframes courses-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Breakpoints*/
 /*Fonts*/
 /*Header*/
@@ -818,6 +842,14 @@ body {
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+@keyframes courses-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .loader {
@@ -1119,6 +1151,20 @@ body {
 .order__button:hover {
   filter: brightness(1.1);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Menu animation*/
+.all-courses .course {
+  animation: courses-anim 1000ms backwards;
+}
+.all-courses .course--1 {
+  animation-delay: 333.3333333333ms;
+}
+.all-courses .course--2 {
+  animation-delay: 666.6666666667ms;
+}
+.all-courses .course--3 {
+  animation-delay: 1000ms;
 }
 
 /*# sourceMappingURL=style.css.map */
