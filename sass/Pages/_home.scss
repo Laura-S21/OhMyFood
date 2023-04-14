@@ -224,7 +224,6 @@ body {
 /* Hearts animation */
 
 .restaurants-section__hearts {
-    
     .solid-heart {
         position: absolute;
         right: 8%;
@@ -237,12 +236,11 @@ body {
         transform: scale(0);
         transition: all 400ms;
     }
-
-    &:hover {
-        .solid-heart {
-        transform: scale(1);
+        &:hover {
+            .solid-heart {
+            transform: scale(1);
+            }
         }
-    }
 }
 
 .wire-heart {
