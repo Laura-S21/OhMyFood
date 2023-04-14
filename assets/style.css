@@ -921,53 +921,6 @@ body {
   animation: lds-ellipsis3 0.6s infinite;
 }
 
-/*Breakpoints*/
-/*Fonts*/
-/*Header*/
-/*Buttons*/
-.location {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.block-title {
-  margin: 0;
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.restaurants-section__card-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  height: 18px;
-}
-
-.restaurants-section__card-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  height: 17px;
-}
-
-.restaurants-section__new {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  background-color: #99E2D0;
-  color: #278870;
-  padding: 7px;
-  border-radius: 2px 2px 2px 2px;
-}
-
-.footer {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-}
-
 body {
   margin: 0;
 }
@@ -1077,6 +1030,16 @@ body {
   margin-top: 5px;
   height: 3px;
   background-color: #99E2D0;
+}
+@media (min-width: 768px) {
+  .course__line {
+    width: 6%;
+  }
+}
+@media (min-width: 1024px) {
+  .course__line {
+    width: 4%;
+  }
 }
 .course__all-buttons {
   display: flex;
@@ -1191,6 +1154,18 @@ body {
   width: 18%;
   margin-left: -18%;
   transition-duration: 500ms;
+}
+@media (min-width: 768px) {
+  .course__button:hover .animation {
+    width: 15%;
+    margin-left: -15%;
+  }
+}
+@media (min-width: 1024px) {
+  .course__button:hover .animation {
+    width: 11%;
+    margin-left: -11%;
+  }
 }
 .course__button:not(:hover) .animation {
   width: 0%;

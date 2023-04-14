@@ -3,7 +3,6 @@
 @import "../Utils/keyframes.scss";
 @import "../Layout/footer";
 @import "../Layout/loader";
-@import "../Base/fonts.scss";
 
 body {
     @include min-width(small);
@@ -118,6 +117,15 @@ body {
         margin-top: 5px;
         height: 3px;
         background-color: $color-tertiary;
+
+        @include min-width(medium) {
+            width: 6%;
+            
+        }
+    
+        @include min-width(large) {
+            width: 4%;
+        }
     }
 
     &__all-buttons {
@@ -208,6 +216,17 @@ body {
         width: 18%;
         margin-left:-18%;
         transition-duration: 500ms;
+
+        @include min-width(medium) {
+            width: 15%;
+            margin-left:-15%;
+            
+        }
+    
+        @include min-width(large) {
+            width: 11%;
+            margin-left:-11%;
+        }
      }
 
      &:not(:hover) .animation {
