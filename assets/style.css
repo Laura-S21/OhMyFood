@@ -100,26 +100,7 @@
 /*Fonts*/
 /*Header*/
 /*Buttons*/
-@keyframes heart-in {
-  from {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-}
-@keyframes heart-out {
-  from {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-}
+/* Loader dots animation */
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -144,6 +125,7 @@
     transform: translate(24px, 0);
   }
 }
+/* Loader animation */
 @keyframes loader-page {
   0% {
     opacity: 1;
@@ -158,6 +140,7 @@
     z-index: -1;
   }
 }
+/* Courses animation */
 @keyframes courses-anim {
   0% {
     opacity: 0;
@@ -217,26 +200,7 @@
   }
 }
 
-@keyframes heart-in {
-  from {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-}
-@keyframes heart-out {
-  from {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-}
+/* Loader dots animation */
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -261,6 +225,7 @@
     transform: translate(24px, 0);
   }
 }
+/* Loader animation */
 @keyframes loader-page {
   0% {
     opacity: 1;
@@ -275,6 +240,7 @@
     z-index: -1;
   }
 }
+/* Courses animation */
 @keyframes courses-anim {
   0% {
     opacity: 0;
@@ -669,26 +635,7 @@ body {
 /*Fonts*/
 /*Header*/
 /*Buttons*/
-@keyframes heart-in {
-  from {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-}
-@keyframes heart-out {
-  from {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-}
+/* Loader dots animation */
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -713,6 +660,7 @@ body {
     transform: translate(24px, 0);
   }
 }
+/* Loader animation */
 @keyframes loader-page {
   0% {
     opacity: 1;
@@ -727,6 +675,7 @@ body {
     z-index: -1;
   }
 }
+/* Courses animation */
 @keyframes courses-anim {
   0% {
     opacity: 0;
@@ -786,26 +735,7 @@ body {
   }
 }
 
-@keyframes heart-in {
-  from {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-}
-@keyframes heart-out {
-  from {
-    clip-path: circle(100%);
-    opacity: 1;
-  }
-  to {
-    clip-path: circle(0%);
-    opacity: 1;
-  }
-}
+/* Loader dots animation */
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -830,6 +760,7 @@ body {
     transform: translate(24px, 0);
   }
 }
+/* Loader animation */
 @keyframes loader-page {
   0% {
     opacity: 1;
@@ -844,6 +775,7 @@ body {
     z-index: -1;
   }
 }
+/* Courses animation */
 @keyframes courses-anim {
   0% {
     opacity: 0;
@@ -1066,6 +998,22 @@ body {
   padding-left: 3%;
   padding-top: 3%;
 }
+@media (min-width: 320px) {
+  .course__dish {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 768px) {
+  .course__dish {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .course__text {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -1076,6 +1024,7 @@ body {
 }
 @media (min-width: 320px) {
   .course__text {
+    width: 60%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1116,7 +1065,7 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-/*Menu animation*/
+/* Menu animation */
 .all-courses .course {
   animation: courses-anim 1000ms backwards;
 }
@@ -1130,7 +1079,7 @@ body {
   animation-delay: 1000ms;
 }
 
-/*Dishes selector animation*/
+/* Dishes selector animation */
 .animation {
   position: absolute;
   right: 0%;
@@ -1157,7 +1106,7 @@ body {
 }
 @media (min-width: 768px) {
   .course__button:hover .animation {
-    width: 15%;
+    width: 14%;
     margin-left: -15%;
   }
 }
@@ -1175,6 +1124,16 @@ body {
 .course__button:hover .course__price {
   right: 20%;
   transition-duration: 500ms;
+}
+@media (min-width: 768px) {
+  .course__button:hover .course__price {
+    right: 18%;
+  }
+}
+@media (min-width: 1024px) {
+  .course__button:hover .course__price {
+    right: 15%;
+  }
 }
 
 .course__button:not(:hover) .course__price {

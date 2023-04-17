@@ -145,6 +145,20 @@ body {
     &__dish {
         @include font-course-dish;
         padding-top: 3%;
+
+        @include min-width(small) {
+            width: 70%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @include min-width(medium) {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &__text {
@@ -152,6 +166,7 @@ body {
         padding-bottom: 3%;
 
         @include min-width(small) {
+            width: 60%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -176,7 +191,7 @@ body {
     
 }
 
-/*Menu animation*/
+/* Menu animation */
 
 .all-courses {
 
@@ -191,7 +206,7 @@ body {
 }
 }
 
-/*Dishes selector animation*/
+/* Dishes selector animation */
 
 .animation {
     position: absolute;
@@ -218,7 +233,7 @@ body {
         transition-duration: 500ms;
 
         @include min-width(medium) {
-            width: 15%;
+            width: 14%;
             margin-left:-15%;
             
         }
@@ -240,6 +255,14 @@ body {
     .course__price{
     right: 20%;
     transition-duration: 500ms;
+
+    @include min-width(medium) {
+        right: 18%;
+    }
+
+    @include min-width(large) {
+        right: 15%;
+    }
     }
 }
 
