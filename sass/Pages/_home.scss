@@ -108,25 +108,21 @@ body {
             align-items: center;
             justify-content: center;
 
-            &:hover {
-                .functioning-section__icon {
-                    color: $color-primary;
-                }
-                
-            }
-
             .functioning-section__icon {
                 color: #7E7E7E;
                 position: absolute;
                 right: 85%;
                 bottom: 36%;
             }
+
+            .fa-store {
+                color: $color-primary;
+            }
         }
             @include min-width(large) {
                 @include functioning-button-large;
                     }
         }
-
 
         &__button-number {
             position: absolute;

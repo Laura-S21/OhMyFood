@@ -495,14 +495,14 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .functioning-section__button:hover .functioning-section__icon {
-    color: #9356DC;
-  }
   .functioning-section__button .functioning-section__icon {
     color: #7E7E7E;
     position: absolute;
     right: 85%;
     bottom: 36%;
+  }
+  .functioning-section__button .fa-store {
+    color: #9356DC;
   }
 }
 @media (min-width: 1024px) {
@@ -989,6 +989,25 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   width: 92%;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 320px) {
+  .course__button:hover .course__text {
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 320px) {
+  .course__button:hover .course__dish {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .course__dish {
   margin: 0;
@@ -999,14 +1018,6 @@ body {
   padding-top: 3%;
 }
 @media (min-width: 320px) {
-  .course__dish {
-    width: 70%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-@media (min-width: 768px) {
   .course__dish {
     width: 100%;
     white-space: nowrap;
@@ -1024,7 +1035,7 @@ body {
 }
 @media (min-width: 320px) {
   .course__text {
-    width: 60%;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

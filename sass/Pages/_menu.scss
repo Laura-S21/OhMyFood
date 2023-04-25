@@ -140,6 +140,29 @@ body {
     &__button {
         @include menu-button;
         position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+            .course__text {
+            @include min-width(small) {
+                width: 65%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                }
+            }
+    
+            .course__dish {
+                @include min-width(small) {
+                    width: 70%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    }
+                }
+        }
     }
 
     &__dish {
@@ -147,13 +170,6 @@ body {
         padding-top: 3%;
 
         @include min-width(small) {
-            width: 70%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        @include min-width(medium) {
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
@@ -166,16 +182,19 @@ body {
         padding-bottom: 3%;
 
         @include min-width(small) {
-            width: 60%;
+            width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
     }
 
     &__price {
         @include font-course-price;
     }
+
+   
 }
 
 .order {
